@@ -1,0 +1,25 @@
+Wait 3 seconds
+Set bumper as input
+Set photoresistor as input
+Set up servos on pins 9 and 10
+Set IR LED as output
+Set IR sensors as inputs
+Start broadcasting IR signal
+
+Read bumper sensor
+Am I pushing a something?
+	If so, Go forward and ignore everything else
+Read IR sensors
+Is there a robot straight ahead?
+	If so, Go forward and ignore everything else
+
+Read photoresistor 
+Am I on the white boarder?
+If so, back up for .2 seconds and turn left for .5 seconds. This will send me in a new direction to look for a robot.
+
+Is there a robot to the left?
+	If so, turn left
+Is there a robot to the right?
+	If so, turn right
+
+I can’t see a robot or a white boarder, so go forward
